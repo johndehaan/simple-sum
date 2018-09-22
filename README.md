@@ -1,28 +1,14 @@
 # simple-sum
 
-> A simple Vue.js app to calculate the sum of the prices of items in a store
+> A simple Vue.js app to calculate the sum of the prices of items in a store, deployed to Amazon AWS S3
 
-## Build Setup
+## How to deploy to Amazon S3
 
-``` bash
-# install dependencies
-npm install
+* Create a new S3 bucket
+* Update S3 bucket name in package.json under scripts -> deploy (currently: "simple-sum-copy"
+* (Install and configure aws-cli)[https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html]
+> npm install
+> npm run build
+> npm run deploy
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
+* [Host website using your S3 bucket)[https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html]
